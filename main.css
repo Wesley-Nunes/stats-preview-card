@@ -58,7 +58,7 @@ body {
   border-top-left-radius: 2%;
 }
 
-#aside-img {
+picture {
   background-color: var(--card-background);
 
   height: 38rem;
@@ -114,4 +114,49 @@ body {
   border-bottom-right-radius: 2%;
 
   filter: sepia(100%) hue-rotate(242deg);
+}
+
+/*Media Query*/
+@media screen and (max-width: 740px) {
+  #main-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  picture,
+  #content {
+    width: 90%;
+  }
+
+  #image {
+    width: 100%;
+
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2%;
+  }
+
+  #content {
+    height: 60rem;
+
+    padding: 4rem;
+
+    border-bottom-right-radius: 2%;
+    border-top-left-radius: 0;
+  }
+
+  #title,
+  #description {
+    text-align: center;
+  }
+
+  #topics {
+    text-align: center;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .topic {
+    margin: 1.5rem 0;
+  }
 }
