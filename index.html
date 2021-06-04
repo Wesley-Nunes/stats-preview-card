@@ -50,9 +50,13 @@
           </div>
         </footer>
       </section>
-      <aside id="aside-img">
-        <img src="./images/image-header-desktop.jpg" id="image" />
-      </aside>
+      <picture>
+        <source
+          media="(max-width: 375px)"
+          srcset="./images/image-header-mobile.jpg"
+        />
+        <img src="./images/image-header-desktop.jpg" alt="#" id="image" />
+      </picture>
     </main>
   </body>
 </html>
