@@ -1,0 +1,117 @@
+/*Global*/
+:root {
+  /*Fonts*/
+  --header-font: "Inter", sans-serif;
+  --general-font: "Lexend Deca", sans-serif;
+  font-size: 62.5%;
+
+  /*Primary colors*/
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+
+  /*Neutral colors*/
+  --main-heading: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--general-font);
+  font-size: 1.5rem;
+
+  background-color: var(--main-background);
+  color: var(--main-paragraph);
+}
+
+/*Page Structure*/
+#main-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 20vh 0;
+}
+
+#content {
+  background-color: var(--card-background);
+
+  height: 38rem;
+  width: 48rem;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 6rem;
+
+  border-bottom-left-radius: 2%;
+  border-top-left-radius: 2%;
+}
+
+#aside-img {
+  background-color: var(--card-background);
+
+  height: 38rem;
+  width: 48rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/*Page Content*/
+#title {
+  font-family: var(--header-font);
+  font-weight: 700;
+
+  color: var(--main-heading);
+}
+
+#title strong {
+  color: var(--accent);
+}
+
+#description {
+  color: var(--main-paragraph);
+
+  margin-bottom: 4rem 0;
+}
+
+#topics {
+  font-weight: 400;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#topics h3 {
+  font-family: var(--header-font);
+
+  color: var(--main-heading);
+}
+
+#topics p {
+  font-variant: small-caps;
+
+  color: var(--stat-heading);
+}
+
+#image {
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+
+  filter: sepia(100%) hue-rotate(242deg);
+}
