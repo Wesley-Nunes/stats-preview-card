@@ -59,7 +59,7 @@ body {
 }
 
 picture {
-  background-color: var(--card-background);
+  background-color: var(--accent);
 
   height: 38rem;
   width: 48rem;
@@ -67,6 +67,9 @@ picture {
   display: flex;
   flex-direction: row;
   justify-content: end;
+
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
 }
 
 /*Page Content*/
@@ -110,10 +113,9 @@ picture {
 }
 
 #image {
-  border-top-right-radius: 2%;
-  border-bottom-right-radius: 2%;
+  width: 100%;
 
-  filter: sepia(100%) hue-rotate(242deg);
+  mix-blend-mode: multiply;
 }
 
 /*Media Query*/
@@ -125,14 +127,15 @@ picture {
 
   picture,
   #content {
+    height: 70%;
     width: 90%;
+
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2%;
   }
 
   #image {
     width: 100%;
-
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 2%;
   }
 
   #content {
