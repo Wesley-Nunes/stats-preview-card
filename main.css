@@ -28,31 +28,32 @@ body {
   font-size: 1.5rem;
 
   background-color: var(--main-background);
-  color: var(--main-paragraph);
 }
 
 /*Page Structure*/
 #main-wrapper {
-  align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
 
-  margin: 20vh 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 75%;
 }
 
 #content {
   background-color: var(--card-background);
 
   height: 38rem;
-  width: 48rem;
+  width: 54rem;
 
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  padding: 6rem;
+  padding: 5rem 7rem;
 
   border-bottom-left-radius: 2%;
   border-top-left-radius: 2%;
@@ -62,7 +63,7 @@ picture {
   background-color: var(--accent);
 
   height: 38rem;
-  width: 48rem;
+  width: 54rem;
 
   display: flex;
   flex-direction: row;
@@ -87,7 +88,7 @@ picture {
 #description {
   color: var(--main-paragraph);
 
-  margin-bottom: 4rem 0;
+  height: 50%;
 }
 
 #topics {
@@ -116,6 +117,10 @@ picture {
   width: 100%;
 
   mix-blend-mode: multiply;
+  filter: opacity(75%);
+
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
 }
 
 /*Media Query*/
