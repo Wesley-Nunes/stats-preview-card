@@ -18,7 +18,6 @@
 
 * {
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
@@ -31,7 +30,7 @@ body {
 }
 
 /*Page Structure*/
-#main-wrapper {
+.main-wrapper {
   display: flex;
 
   position: absolute;
@@ -42,7 +41,7 @@ body {
   width: 75%;
 }
 
-#content {
+.content {
   background-color: var(--card-background);
 
   height: 38rem;
@@ -74,24 +73,24 @@ picture {
 }
 
 /*Page Content*/
-#title {
+.title {
   font-family: var(--header-font);
   font-weight: 700;
 
   color: var(--main-heading);
 }
 
-#title strong {
+.title strong {
   color: var(--accent);
 }
 
-#description {
+.description {
   color: var(--main-paragraph);
 
   height: 50%;
 }
 
-#topics {
+.topics {
   font-weight: 400;
 
   width: 100%;
@@ -101,19 +100,19 @@ picture {
   justify-content: space-between;
 }
 
-#topics h3 {
+.topics h3 {
   font-family: var(--header-font);
 
   color: var(--main-heading);
 }
 
-#topics p {
+.topics p {
   font-variant: small-caps;
 
   color: var(--stat-heading);
 }
 
-#image {
+.image {
   width: 100%;
 
   mix-blend-mode: multiply;
@@ -125,13 +124,13 @@ picture {
 
 /*Media Query*/
 @media screen and (max-width: 740px) {
-  #main-wrapper {
+  .main-wrapper {
     display: flex;
     flex-direction: column-reverse;
   }
 
   picture,
-  #content {
+  .content {
     height: 70%;
     width: 90%;
 
@@ -139,11 +138,11 @@ picture {
     border-top-left-radius: 2%;
   }
 
-  #image {
+  .image {
     width: 100%;
   }
 
-  #content {
+  .content {
     height: 60rem;
 
     padding: 4rem;
@@ -152,12 +151,12 @@ picture {
     border-top-left-radius: 0;
   }
 
-  #title,
-  #description {
+  .title,
+  .description {
     text-align: center;
   }
 
-  #topics {
+  .topics {
     text-align: center;
 
     align-items: center;
